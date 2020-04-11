@@ -112,7 +112,7 @@ spec:
     spec:
       containers:
       - name: notification
-        image: @registryHostAndRepo@/default/notification:latest
+        image: @registryHostAndRepo@/notification:latest
         env:
           - name: MQ_ID
             valueFrom:
@@ -183,7 +183,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: @registryHostAndRepo@/default/portfolio:latest
+        image: @registryHostAndRepo@/portfolio:latest
         env:
           - name: JDBC_HOST
             valueFrom:
@@ -261,7 +261,7 @@ spec:
     spec:
       containers:
       - name: stock-quote
-        image: @registryHostAndRepo@/default/stock-quote:latest
+        image: @registryHostAndRepo@/stock-quote:latest
         env:
           - name: REDIS_URL
             valueFrom:
